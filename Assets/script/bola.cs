@@ -5,6 +5,8 @@ using UnityEngine;
 public class bola : MonoBehaviour
 {
     public Vector2 speed;
+    public Vector2 resetPosition;
+
     private Rigidbody2D rig;
 
     private void Start()
@@ -12,8 +14,9 @@ public class bola : MonoBehaviour
         rig = GetComponent<Rigidbody2D>();
         rig.velocity = speed;
     }
-    void Update()
+
+    public void ResetBall()
     {
-        
+        transform.position = new Vector3 (resetPosition.x, resetPosition.y,2);
     }
 }

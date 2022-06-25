@@ -7,3 +7,7 @@ obj/*
 .vsconfig 
 *.sln 
 *.csproj 
+
+.vsconfig 
+*.sln 
+*.csproj 
