@@ -34,4 +34,8 @@ public class padelControl : MonoBehaviour
         Debug.Log("Test : " + movement);
         rig.velocity = movement;
     }
+    public void ActivatePUSpeedUp(float Magnitude)
+    {
+        rig.velocity *= Magnitude;
+    }
 }

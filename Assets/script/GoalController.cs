@@ -16,6 +16,10 @@ public class GoalController : MonoBehaviour
             {
                 Manager.AddRightScore(1);
             }
+            else
+            {
+                Manager.AddLeftScore(1);
+            }
         }
     }
 
